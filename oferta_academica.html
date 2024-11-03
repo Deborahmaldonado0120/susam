@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CEMG FRANKLIN DELANO ROOSEVELT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Estilos para el contenedor de carreras */
+        .carrera-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .carrera {
+            position: relative;
+            width: 250px; /* Ancho del cuadro */
+            height: 300px; /* Alto del cuadro */
+            perspective: 1000px;
+            margin: 15px;
+        }
+        .carrera-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .carrera:hover .carrera-inner {
+            transform: rotateY(180deg);
+        }
+        .carrera-front, .carrera-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px; /* Esquinas redondeadas */
+            overflow: hidden;
+        }
+        .carrera-front {
+            display: flex;
+            align-items: flex-end; /* Alinea el título al fondo */
+            justify-content: center;
+            background-color: #ffffff; /* Fondo del frente */
+        }
+        .carrera-back {
+            background-color: #f0f0f0; /* Fondo de la parte de atrás */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        img {
+            width: 100%; /* Ajusta la imagen al cuadro */
+            height: 100%; /* Llenar completamente el cuadro */
+            object-fit: cover; /* Mantiene la proporción y llena el cuadro */
+        }
+        .titulo-carrera {
+            position: absolute;
+            bottom: 10px; /* Margen desde la parte inferior */
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white; /* Color del texto del título */
+            font-weight: bold; /* Negrita */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para mejorar legibilidad */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">CEMG FRANKLIN DELANO ROOSEVELT</a></h1>
+            <nav id="nav">
+                <ul>
+                     <li><a href="index.html">Inicio</a></li>
+                    <li><class="current"><a href="oferta_academica.html">Oferta Académica</a></li>
+                    <li><a href="instalaciones.html">Instalaciones</a></li>
+                    <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                    <li><a href="promo2024.html">Promo 2024</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Sección de Oferta Académica -->
+        <section class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Oferta Académica</h2>
+                    <p>Conoce nuestras especialidades académicas:</p>
+                     <h1>(coloque el mouse sobre la imagen para ver información de la carrera.)</h1>
+                </header>
+                <div class="carrera-container">
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\info.jpeg"alt="Informática" />
+                                <div class="titulo-carrera">Informática</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Informática abarca el estudio de sistemas, programación y análisis de datos para resolver problemas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\rob.jpeg" alt="Informática Orientada a Robótica" />
+                                <div class="titulo-carrera">Informática Orientada a Robótica</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>Informática Orientada a Robótica combina programación y diseño para desarrollar sistemas robóticos avanzados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\cf.jpeg" alt="Contaduría y Finanzas" />
+                                <div class="titulo-carrera">Contaduría y Finanzas</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Contaduría y Finanzas enseña a gestionar recursos financieros y a realizar análisis contables.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\ch.jpeg" alt="Ciencias y Humanidades" />
+                                <div class="titulo-carrera">Ciencias y Humanidades</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Ciencias y Humanidades se centra en el análisis crítico y el desarrollo de habilidades de comunicación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\mp.jpeg" alt="Marítimo Portuario" />
+                                <div class="titulo-carrera">Marítimo Portuario</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Marítimo Portuario prepara a los estudiantes en la gestión y operación de puertos y transporte marítimo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\hotelera.jpeg" alt="Administración Hotelera" />
+                                <div class="titulo-carrera">Administración Hotelera</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Administración Hotelera enseña a gestionar operaciones en la industria hotelera.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\1fb121ea-4421-41b8-92da-fc89993cadfd.jpeg" alt="Administración de Empresas" />
+                                <div class="titulo-carrera">Administración de Empresas</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Administración de Empresas se centra en la gestión eficiente de organizaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrera">
+                        <div class="carrera-inner">
+                            <div class="carrera-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\Soldagem por arco elétrico.jpeg"alt="Construcciones Metálicas" />
+                                <div class="titulo-carrera">Construcciones Metálicas</div>
+                            </div>
+                            <div class="carrera-back">
+                                <p>La carrera de Construcciones Metálicas se especializa en el diseño y construcción de estructuras metálicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+</html>

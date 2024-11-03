@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CEMG FRANKLIN DELANO ROOSEVELT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="C:\Users\chuwi\Downloads\FDRWEB\images\LOGO.png" type="image/png">
+
+    <style>
+        /* Estilos para el contenedor de instalaciones */
+        .instalacion-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .instalacion {
+            position: relative;
+            width: 300px; /* Ancho del cuadro */
+            height: 350px; /* Alto del cuadro */
+            perspective: 1000px;
+            margin: 15px;
+            cursor: pointer; /* Cambia el cursor al pasar sobre el cuadro */
+        }
+        .instalacion-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .instalacion:hover .instalacion-inner {
+            transform: rotateY(180deg);
+        }
+        .instalacion-front, .instalacion-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px; /* Esquinas redondeadas */
+            overflow: hidden;
+        }
+        .instalacion-front {
+            display: flex;
+            align-items: flex-end; /* Alinea el título al fondo */
+            justify-content: center;
+            background-color: #ffffff; /* Fondo del frente */
+        }
+        .instalacion-back {
+            background-color: #f0f0f0; /* Fondo de la parte de atrás */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        img {
+            width: 100%; /* Ajusta la imagen al cuadro */
+            height: 100%; /* Llenar completamente el cuadro */
+            object-fit: cover; /* Mantiene la proporción y llena el cuadro */
+        }
+        .titulo-instalacion {
+            position: absolute;
+            bottom: 10px; /* Margen desde la parte inferior */
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white; /* Color del texto del título */
+            font-weight: bold; /* Negrita */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para mejorar legibilidad */
+        }
+        /* Estilos para las imágenes del edificio */
+        .imagenes-edificio {
+            display: none; /* Oculto por defecto */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            justify-content: center;
+            align-items: center;
+            z-index: 10; /* Para estar encima */
+        }
+        .imagenes-edificio img {
+            width: 90%; /* Ajusta el tamaño de las imágenes dentro del cuadro */
+            height: auto;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">CEMG FRANKLIN DELANO ROOSEVELT</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="oferta_academica.html">Oferta Académica</a></li>
+                    <li class="current"><a href="instalaciones.html">Instalaciones</a></li>
+                    <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                    <li><a href="promo2024.html">Promo 2024</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Sección de Instalaciones -->
+        <section class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Instalaciones</h2>
+                    <p>Descubre nuestras instalaciones educativas:</p>
+                    <h1>(Coloque el mouse sobre la imagen para ver más información sobre la instalación.)</h1>
+                </header>
+                <div class="instalacion-container">
+                    <!-- Edificio A -->
+                    <div class="instalacion" onclick="toggleImagenes('edificioA')">
+                        <div class="instalacion-inner">
+                            <div class="instalacion-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\fotosfdr\edificioA.jpg" alt="Edificio A" />
+                                <div class="titulo-instalacion">Edificio A</div>
+                            </div>
+                            <div class="instalacion-back">
+                                <p>Este es el edificio A, donde se imparten diversas clases.</p>
+                            </div>
+                        </div>
+                        <div class="imagenes-edificio" id="edificioA">
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_a1.jpeg" alt="Edificio A - Imagen 1" />
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_a2.jpeg" alt="Edificio A - Imagen 2" />
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_a3.jpeg" alt="Edificio A - Imagen 3" />
+                        </div>
+                    </div>
+
+                    <!-- Edificio B -->
+                    <div class="instalacion" onclick="toggleImagenes('edificioB')">
+                        <div class="instalacion-inner">
+                            <div class="instalacion-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\fotosfdr\BRECTA.jpg" alt="Edificio B" />
+                                <div class="titulo-instalacion">Edificio B</div>
+                            </div>
+                            <div class="instalacion-back">
+                                <p>Este es el edificio B, donde se realizan actividades administrativas.</p>
+                            </div>
+                        </div>
+                        <div class="imagenes-edificio" id="edificioB">
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_b1.jpeg" alt="Edificio B - Imagen 1" />
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_b2.jpeg" alt="Edificio B - Imagen 2" />
+                        </div>
+                    </div>
+
+                    <!-- Edificio C -->
+                    <div class="instalacion" onclick="toggleImagenes('edificioC')">
+                        <div class="instalacion-inner">
+                            <div class="instalacion-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\fotosfdr\cfrontal.jpg" alt="Edificio C" />
+                                <div class="titulo-instalacion">Edificio C</div>
+                            </div>
+                            <div class="instalacion-back">
+                                <p>Este es el edificio C, un espacio para la educación técnica.</p>
+                            </div>
+                        </div>
+                        <div class="imagenes-edificio" id="edificioC">
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_c1.jpeg" alt="Edificio C - Imagen 1" />
+                            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\edificio_c2.jpeg" alt="Edificio C - Imagen 2" />
+                        </div>
+                    </div>
+
+                    <!-- Edificio D -->
+                    <div class="instalacion" onclick="toggleImagenes('edificio D')">
+                        <div class="instalacion-inner">
+                            <div class="instalacion-front">
+                                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\fotosfdr\edificioD.jpg" alt="Edificio D" />
+                                <div class="titulo-instalacion">Edificio D</div>
+                            </div>
+                            <div class="instalacion-back">
+                                <p>Este es el edificio D, destinado a actividades recreativas.</p>
+                            </div>
+                        </div>
+                        <div class="imagenes-edificio" id="edificioD">
+                            <img

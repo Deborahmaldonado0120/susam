@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CEMG FRANKLIN DELANO ROOSEVELT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="C:\Users\chuwi\Downloads\FDRWEB\images\LOGO.png" type="image/png">
+
+    <style>
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+#header {
+    background-color: #333;
+    padding: 10px 0; /* Reducido para tener un estilo más compacto */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    box-sizing: border-box;
+    margin: 0; /* Sin margen */
+}
+
+#header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    color: gold;
+}
+
+/* Barra de Navegación estilo Contáctanos */
+#nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav ul li {
+    padding: 0 10px; /* Espaciado más compacto entre los enlaces */
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#nav ul li.current a {
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+/* Cuadrícula de Tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(6, 150px);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Tarjeta estilo 3D */
+.card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden; /* Asegura que nada sobresalga */
+}
+
+.card-front {
+    background-color: gold;
+}
+
+.card-back {
+    background-color: gold; /* Parte trasera dorada */
+    color: black; /* Letras en negro */
+    transform: rotateY(180deg);
+}
+
+/* Estilo de imágenes */
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda el área */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para tabletas */
+        grid-template-rows: repeat(6, 150px); /* Mantiene las filas */
+    }
+
+    #nav ul li {
+        padding: 0 5px; /* Ajusta el espaciado entre los enlaces */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para teléfonos */
+        grid-template-rows: repeat(6, 120px); /* Ajusta la altura de las filas */
+    }
+
+    #nav ul li {
+        padding: 0 2px; /* Ajusta aún más el espaciado */
+    }
+
+    #header h1 {
+        font-size: 20px; /* Reduce el tamaño del texto en encabezado */
+    }
+
+    #nav ul li a {
+        font-size: 16px; /* Reduce el tamaño del texto en la navegación */
+    }
+}
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <!-- Logo -->
+            <h1><a href="inicio.html" id="logo">CEMG FRANKLIN DELANO ROOSEVELT<em></em></a></h1>
+
+
+           <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li> <a href="inicio.html">Inicio</a></li>
+                    <li><a href="oferta_academica.html">Oferta Académica</a></li>
+                    <li><a href="instalaciones.html">Instalaciones</a></li>
+                    <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                        <li class="current"><a href="promo2024.html">Promo 2024</a></li>
+                </ul>
+            </nav>
+        </div>
+
+<h2 style="text-align: center; font-size: 28px; color: #333; margin: 10px 0;">PROMO 2024</h2>
+        <!-- Main -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-12">
+                        <div id="content">
+
+                            <!-- Grid de cartas -->
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-inner">
+                                      
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner">
+                                       
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner">
+                                        
+                                    </div>
+                                </div>
+                                <div class="grid-container">
+    <!-- 1 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\andrea.jpg" alt="Adrea" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Cree en ti mismo y en lo que eres capaz de lograr."</div>
+        </div>
+    </div>
+    
+    <!-- 2 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\angie.jpg" alt="Angie Nahomi Alvarado Ramos" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Dile no al deck."</div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ashley C.jpg" alt="Ashley Carolina Herrera Escalante" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Cada día es una oportunidad para ser mejor."</div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ASHELY V.jpg" alt="Ashley Daniela Varela Rivera" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Si puedes soñarlo, puedes lograrlo."</div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ASTRID.jpg" alt="Astrid Carolina Chavez Morales" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Nunca es tarde para ser quien quieres ser."</div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\SUSAM.jpg"alt="Deborah Susana Maldonado Chayeb" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Con el quesito de los nachos."</div>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\perrito graduado 🎓.jpeg" alt="Dunia Lineth Miguel Mejia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"La educación es el arma más poderosa."</div>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ELSA.jpg" alt="Elsa Fabely Gallardo Castillo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Cree en el proceso y sigue adelante."</div>
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\perrito graduado 🎓.jpeg" alt="Genesis Abigail Perez Alvarado" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Esfuerzo y perseverancia siempre triunfan."</div>
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\RACHELL .jpg" alt="Genesis Rachell Murillo Paz" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Cada día es una nueva oportunidad para crecer."</div>
+        </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\LOHANY.jpg" alt="Gladys Lohany Ortiz Manzanares" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Con dedicación, todo es posible."</div>
+        </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ABIGAIL CARDONA.jpg" alt="Greisy Abigail Cardona Rodriguez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="card-back">"Sé el cambio que quieres ver en el mundo."</div>
+        </div>
+    </div>
+<!-- 13 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\HEYDI.jpg" alt="Heidy Giselle " style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito es la recompensa del esfuerzo."</div>
+    </div>
+</div>
+
+<!-- 14 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\KRITZA.jpg"alt="Kritza Jeraldyn" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Lucha por lo que quieres, cada día."</div>
+    </div>
+</div>
+
+<!-- 15 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\perrito graduado 🎓.jpeg"alt="Lidny Dayanna" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"La perseverancia te llevará lejos."</div>
+    </div>
+</div>
+
+<!-- 16 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\MAYLIN.jpg" alt="Meylin Nayelli" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Cada paso cuenta, no te rindas."</div>
+    </div>
+</div>
+
+<!-- 17 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\NAYELI.jpg" alt="Nayeli Rosibel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Tu esfuerzo hoy será tu éxito mañana."</div>
+    </div>
+</div>
+
+<!-- 18 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\perrito graduado 🎓.jpeg" alt="Nissi Bueso" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Nunca subestimes el poder de tu determinación."</div>
+    </div>
+</div>
+
+<!-- 19 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\YURIT.jpg"alt="Yurit Elizabeth Mejia Hernandez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Eres capaz de lograr todo lo que te propongas."</div>
+    </div>
+</div>
+
+<!-- 20 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ZULEYKA.jpg" alt="Zuleyka Castro" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Persigue tus sueños con pasión."</div>
+    </div>
+</div>
+
+<!-- 21 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ALEX.jpg" alt="Alex Jazir Mejia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito llega para quienes están dispuestos a esforzarse."</div>
+    </div>
+</div>
+
+<!-- 22 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ARNOLDO.jpg" alt="Arnoldo Alvarenga" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito es la recompensa del esfuerzo."</div>
+    </div>
+</div>
+
+<!-- 23 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Daniel Ordoñez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Lucha por lo que quieres, cada día."</div>
+    </div>
+</div>
+
+<!-- 24 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ASAI.jpg" alt="Isai Santos" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"La perseverancia te llevará lejos."</div>
+    </div>
+</div>
+
+<!-- 25 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Delvin" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Cada paso cuenta, no te rindas."</div>
+    </div>
+</div>
+
+<!-- 26 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ERIC M.jpg" alt="Erick Morales" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Tu esfuerzo hoy será tu éxito mañana."</div>
+    </div>
+</div>
+
+<!-- 27 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\ERWIN.jpg"alt="Erwin Ordoñez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Nunca subestimes el poder de tu determinación."</div>
+    </div>
+</div>
+
+<!-- 28 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Jeffry" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Eres capaz de lograr todo lo que te propongas."</div>
+    </div>
+</div>
+
+<!-- 29 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Jonathan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"Persigue tus sueños con pasión."</div>
+    </div>
+</div>
+
+<!-- 30 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\YAHIR.jpg" alt="Jostyn" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito llega para quienes están dispuestos a esforzarse."</div>
+    </div>
+</div>
+
+<!-- 31 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\KENNY.jpg" alt="Kenny" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito llega para quienes están dispuestos a esforzarse."</div>
+    </div>
+</div>
+<!-- 32 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Kevin" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito llega para quienes están dispuestos a esforzarse."</div>
+    </div>
+</div>
+<!-- 33 -->
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="C:\Users\chuwi\Downloads\FDRWEB\images\promo\mono.jpeg" alt="Mario" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+        </div>
+        <div class="card-back">"El éxito llega para quienes están dispuestos a esforzarse."</div>
+    </div>
+</div>
+       
+</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <!-- Footer content -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
